@@ -19,7 +19,6 @@
             </div>
         </div>
 
-
         <div class="alert alert-danger info-error" style="display:none;">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
             <strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -47,10 +46,8 @@
             <div class="col-md-3" id="uploadPreview">
                 <img src="{{asset('images/applicant-default.png')}}" class="thumbnail" style="height:200" alt="Logo">
             </div>
-
         </div>
         <div class="col-md-12 col-sm-12 col-lg-12">
-
             <form method="POST" action="{{url('#')}}" accept-charset="UTF-8" class="form-horizontal admissionFormVal"
                 id="admissionForm" enctype="multipart/form-data"><input name="_token" type="hidden"
                     value="rhi04qsomMSmx8fmMgzij2jVoVbdr3CaatXA8yDS">
@@ -71,7 +68,6 @@
                             placeholder="Student Name (English)">
                     </div>
                 </div>
-
 
                 <div class="form-group">
                     <label class="col-md-2">Father's Name (Bangla) <span
@@ -146,7 +142,6 @@
                         <span id="imageAlert" style="color:red;"></span>
                     </div>
                 </div>
-
 
                 <fieldset>
                     <legend><span class="glyphicon glyphicon-info-sign"></span> Permanent Address</legend>
@@ -305,7 +300,6 @@
                     <div class="col-md-4">
                         <input name="date_of_birth" value="" class=" col-md-1 form-control input-sm" type="text"
                             placeholder="Date of Birth (e.g. dd/mm/yyyy)">
-
                     </div>
                     <label class="col-md-2">Gender <span style="color:red;font-weight: bolder;">*</span></label>
                     <div class="col-md-4">
@@ -353,7 +347,6 @@
                         <input name="pre_result" value="" class="form-control input-sm" type="text"
                             placeholder="GPA or Mark">
                     </div>
-
                 </div>
 
                 <div class="form-group">
@@ -395,29 +388,20 @@
                         </select>
                     </div>
                 </div>
-
-
-                <div id="loadOptionalEditionalSubject" class="col-md-12">
-
+                <div id="#" class="col-md-12">
                 </div>
-
-                <div id="loadEducationalDetails" class="col-md-12">
-
+                <div id="#" class="col-md-12">
                 </div>
-
                 <div style='text-align:center'>
                     <input class="btn btn-primary btn_submit" type="submit" value="Registration" style="display:none">
                 </div><br>
-
             </form>
-
         </div>
-
     </div>
     <div class="bg-primary container" style='height:50px;'>
         <div class="col-md-12">
             <p style='text-align:center; align-items:center;'>
-                Copyright &copy; 2023. Developed by : <a href="{{url('#')}}" target='_blank' style='color:#fff'>SohatTech</a>
+                Copyright &copy; 2023. Developed by : <a href="{{url('#')}}" target='_blank' style='color:#fff'>SohagTech</a>
             </p>
         </div>
     </div>
