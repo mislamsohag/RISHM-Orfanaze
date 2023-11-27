@@ -12,7 +12,7 @@
         @include('Components.home.photoGallery')
     </div>
     <div class="col-md-3 noPrintShow">
-        @include('Components.home.admission')
+        @include('Components.home.admissionSection')
         @include('Components.home.downloadLink')
         @include('Components.home.visitorsCount')
     </div>

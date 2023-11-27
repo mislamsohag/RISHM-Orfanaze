@@ -43,15 +43,15 @@
 
 						<li class="nav-item dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-								data-close-others="false" href="#">Admission <i class="fa fa-angle-down"></i></a>
+								data-close-others="false" href="{{url('admission')}}">Admission <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
-								<li><a href="{{url('http://202.5.38.86/ems/admissionForm')}}" target='_blank'>Online Admission</a>
+								<li><a href="{{url('admission')}}" target='_blank'>Online Admission</a>
 								</li>
-								<li><a href="{{url('http://202.5.38.86/ems/admissionFormPrintSearch')}}" target='_blank'>Admission
+								<li><a href="{{url('ems/admissionFormPrintSearch')}}" target='_blank'>Admission
 										Form Print</a></li>
-								<li><a href="{{url('http://202.5.38.86/ems/editApplicantsView')}}" target='_blank'>Admission Form
+								<li><a href="{{url('ems/editApplicantsView')}}" target='_blank'>Admission Form
 										Update</a></li>
-								<li><a href="{{url('http://202.5.38.86/ems/admissionResultCheck')}}" target='_blank'>Admission
+								<li><a href="{{url('ems/admissionResultCheck')}}" target='_blank'>Admission
 										Result Check</a></li>
 							</ul>
 						</li>
