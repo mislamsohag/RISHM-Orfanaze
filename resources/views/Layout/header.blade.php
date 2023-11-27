@@ -4,7 +4,7 @@
     <div class="top-bar"></div>
     <div class="header-main container">
         <h1 class="logo col-md-6 col-sm-6">
-            <a href="javascript:;"><img src="{{asset('images/institute/29535.gif')}}" alt="Logo">
+            <a href="javascript:;"><img style="height: 80px; width: 80px;" src="{{asset('images/institute/RSIHNM.png')}}" alt="Logo">
                 <h3 style="line-height: 30px;">RAZAPUR SIDDIQIA ISLAMIA HAFIZIA MADRASAH</h3>
             </a>
         </h1>

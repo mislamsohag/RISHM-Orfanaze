@@ -11,10 +11,7 @@
             </p>
             <p>
             <a href="{{url('#')}}"><i class="fa fa-angle-double-right"></i> Admission Result</a>
-            </p>
-            <p>
-            <a href="{{url('#')}}"><i class="fa fa-angle-double-right"></i> Tc Form</a>
-            </p>
+            </p>            
         </div>
     </div>
     <div class="col-md-3">
@@ -30,9 +27,6 @@
             <p>
             <a href="{{url('#')}}"><i class="fa fa-angle-double-right"></i> Admission Result</a>
             </p>
-            <p>
-            <a href="{{url('#')}}"><i class="fa fa-angle-double-right"></i> Tc Form</a>
-            </p>
         </div>
     </div>
     <div class="col-md-3">
@@ -46,9 +40,6 @@
             </p>
             <p>
             <a href="{{url('#')}}"><i class="fa fa-angle-double-right"></i> Admission Result</a>
-            </p>
-            <p>
-            <a href="{{url('#')}}"><i class="fa fa-angle-double-right"></i> Tc Form</a>
             </p>
         </div>
     </div>
@@ -64,9 +55,6 @@
             </p>
             <p>
                 <a href="{{url('#')}}"><i class="fa fa-angle-double-right"></i> Admission Result</a>
-            </p>
-            <p>
-                <a href="{{url('#')}}"><i class="fa fa-angle-double-right"></i> Tc Form</a>
             </p>
         </div>
     </div>

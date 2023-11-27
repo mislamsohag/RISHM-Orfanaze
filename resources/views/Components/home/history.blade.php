@@ -13,5 +13,5 @@
             time there are upto Kamil class in this institute. In the scholarship and Madrasah board
             examination the madrasah has good reputation, and Last 10 years in Bangladesh.</div>
         </p>
-    </div><!--//section-content-->
+    </div>
 </section>
