@@ -1,6 +1,6 @@
 @extends('Layout.app')
 
 @section('content')
-@include('Components.pages.onlineAdmission')
+@include('Components.pages.admission.onlineAdmission')
 
 @endsection

@@ -20,12 +20,16 @@ body {
   height: 70px;
   /* must be the same height as footer */
 }
-.footer {
+header{
+  background: url(../images/bg1.jpg);
+	position:relative;
+	/* min-height:100%; */
+}
+footer {
+  background: url(../images/bg1.jpg);
 	width:100%;
 	position:absolute;
-	bottom:0;
-	left:0;
-  /* must be the same height as footer */
+  padding: 20px;  
 }
 h1,
 h2,
@@ -35,6 +39,9 @@ h5,
 h6 {
   font-family: 'open sans', arial, sans-serif;
   font-weight: 300;
+}
+p{
+  text-align: justify;
 }
 x fol p {
   color: #444444;
@@ -54,19 +61,24 @@ a:hover {
 a:focus {
   text-decoration: none;
 }
-.btn {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+.button {
+  margin-left:2px;   
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  -o-border-radius: 0;  
+  background: #BAB435;
+  border: 1px solid #BAB435;
+  border-radius: 20px;
+  color: #fff;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+.button:hover {
+  background: #84aac9;
+  border: 1px solid #84aac9;
+  color: #fff;
 }
 .btn .fa {
   color: #fff;
@@ -76,8 +88,9 @@ a:focus {
   margin-right: 0;
 }
 .btn-theme {
-  background: #6091ba;
-  border: 1px solid #6091ba;
+  background: #BAB435;
+  border: 1px solid #BAB435;
+  border-radius: 20px;
   color: #fff;
 }
 .btn-theme:hover {
@@ -646,9 +659,9 @@ ul.custom-list-style li {
   padding: 0;
 }
 /* ======= Header ======= */
-.header {
-	background: transparent url("../images/top_bg.png") repeat-x scroll center top;
-}
+/* .header {
+	background: transparent url("../images/top_bg.pg") repeat-x scroll center top;
+} */
 .header .top-bar {
   background: #2f506c;
 }
@@ -686,7 +699,7 @@ ul.custom-list-style li {
 .header h1.logo {
   margin-top: 0;
   margin-bottom: 0;
-  background-image: url("../images/logo-bg.png");
+  background-image: url("../images/bg2.png");
   padding: 10px 10px 10px;
 }
 .header .menu-top {
@@ -724,7 +737,7 @@ ul.custom-list-style li {
   -o-border-radius: 5px;
   font-size: 12px;
   color: #CCC;
-  background-color: #025096;
+  background-color: #1A6F13;
   padding-right: 8px;
 }
 .header .panel-link {
@@ -775,7 +788,7 @@ ul.custom-list-style li {
   border-color: #6091ba;
 }
 .main-nav {
-	background: #025096;
+	background: #1A6F13;
 	margin-bottom: 2px;
 }
 .main-nav button {
@@ -815,14 +828,14 @@ ul.custom-list-style li {
   -o-transition: all 0.4s ease-in-out;
 }
 .main-nav .nav .nav-item a:hover {
-  background: #68B4F8;
+  background: #BAB435;
   color: #fff;
 }
 .main-nav .nav .nav-item.active {
   position: relative;
 }
 .main-nav .nav .nav-item.active > a {
-  background: #68B4F8;
+  background: #BAB435;
   color: #fff;
 }
 .main-nav .nav .nav-item.active > a:before {
@@ -840,7 +853,7 @@ ul.custom-list-style li {
   display: none;
 }
 .main-nav .nav .nav-item.open a {
-  background: #68B4F8;
+  background: #BAB435;
   color: #fff;
 }
 .main-nav .nav .nav-item .dropdown-menu {
@@ -860,7 +873,7 @@ ul.custom-list-style li {
   opacity: 0.90;
 }
 .main-nav .nav .nav-item .dropdown-menu a {
-  border-bottom: 1px solid #025096;
+  border-bottom: 1px solid #1A6F13;
   padding: 8px 20px;
 }
 .main-nav .nav .nav-item .dropdown-menu li:last-child a {
@@ -1057,7 +1070,7 @@ ul.custom-list-style li {
   margin-top: 10px;
   margin-bottom: 10px;
   background: #FFF;
-  border-bottom: 1px solid #025096;
+  border-bottom: 1px solid #1A6F13;
 }
 .page-heading {
 	padding:10px 15px 5px 15px;
@@ -1492,7 +1505,7 @@ ul.custom-list-style li {
   color: #2f506c;
 }
 .home-page h1.section-heading .line {
-  border-top: 4px solid #177EDA;
+  border-top: 4px solid #BAB435;
   display: inline-block;
   padding: 0 15px;
   padding-top: 5px;
@@ -1706,7 +1719,7 @@ ul.custom-list-style li {
   margin: 18px 5px 0 5px;
 }
 .home-page .awards .carousel-control:hover .fa {
-  color: #68B4F8;
+  color: #BAB435;
 }
 /* ======= Courses Page ======= */
 .courses-wrapper .tab-content {

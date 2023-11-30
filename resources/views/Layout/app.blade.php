@@ -50,19 +50,18 @@
 </head>
 
 <body class="home-page">
-    <div class="wrapper">
-        <!-- Header -->
-        @include('Layout.header')
-        <!-- Header -->
+    <!-- Header -->
+    @include('Layout.header')
+    <!-- Header -->    
 
         <!-- All Components -->
         @yield('content')
         <!-- All Components -->
 
-        <!-- Footer -->
-        @include('Layout.footer')
-        <!-- Footer -->
-    </div>
+    <!-- Footer -->
+    @include('Layout.footer')
+    <!-- Footer -->
+
     <!-- Scripts -->
     <script src="{{asset('js/jquery-migrate-1.2.1.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>

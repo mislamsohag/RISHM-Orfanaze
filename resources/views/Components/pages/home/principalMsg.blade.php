@@ -9,7 +9,7 @@
         </figure>
         <div class="section-content">
             <p class="description">
-            <div><span style="font-family:arial,helvetica,sans-serif"><big>W</big>elcome you all
+            <div><p><big>W</big>elcome you all
                     faculty members, prospective &amp; current students as well as stakeholders and
                     alumni to these pages of madrasah website for needful information in the way of
                     digital Bangladesh. Madrasah administration facilitates all sort of teaching
@@ -19,7 +19,7 @@
                     educational organisation of repute plays in today&rsquo;s society. If I feel
                     honoured to be in charge of a seat of learning that can mould the most
                     significant resource of any nation young, impressionable human minds I am also
-                    sensitive to the important implications of this enterprise.</span></div>
+                    sensitive to the important implications of this enterprise.</p></div>
             </p>
         </div>
     </div>

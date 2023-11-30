@@ -3,12 +3,12 @@
         <div class="row bg-primary">
             <div class="col-md-2">
                 <h3 class="logo col-md-5 col-sm-5 lineHeight">
-                    <a href="{{url('javascript:;')}}"><img src="{{asset('images/logo.gif')}}" class="thumbnail"
+                    <a href="{{url('javascript:;')}}"><img style="height: 100px; width:100px;" src="{{asset('images/RSIHNM.png')}}" class="thumbnail"
                             alt="Logo"></a>
                 </h3><!--//logo-->
             </div>
             <div class="col-md-10">
-                <h1 style="line-height: 30px;">RAZAPUR SIDDIQIA HAFIZI MADRASAH & ORFANAZE</h1>
+                <h1 class="text-center">RAZAPUR SIDDIQIA HAFIZIA NURANI MADRASAH & ORPANAGE</h1>
                 <p>Vill: Razapur, P.O: Khilpara, P.S: Hajigonj, Dist: Chandpur, Phone: +880 1812-060163, www.abc.org</p>
 
                 <div class='pull-right'><a href="{{url('#')}}" class='btn btn-warning btn-sm'>New Application</a></div>

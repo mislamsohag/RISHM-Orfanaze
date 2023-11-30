@@ -1,20 +1,22 @@
 @extends('Layout.app')
 
 @section('content')
-@include('Components.home.nav')
-@include('Components.home.slider')
-@include('Components.home.news')
-<div class="row cols-wrapper">
+@include('Components.pages.home.nav')
+@include('Components.pages.home.slider')
+<div class="container">
+@include('Components.pages.home.news')
+<div class="row">
     <div class="col-md-9">
-        @include('Components.home.history')
-        @include('Components.home.principalMsg')
-        @include('Components.home.notice')
-        @include('Components.home.photoGallery')
+        @include('Components.pages.home.history')
+        @include('Components.pages.home.principalMsg')
+        @include('Components.pages.home.notice')
+        @include('Components.pages.home.photoGallery')
     </div>
     <div class="col-md-3 noPrintShow">
-        @include('Components.home.admissionSection')
-        @include('Components.home.downloadLink')
-        @include('Components.home.visitorsCount')
+        @include('Components.pages.home.admissionSection')
+        @include('Components.pages.home.downloadLink')
+        @include('Components.pages.home.visitorsCount')
     </div>
+</div>
 </div>
 @endsection

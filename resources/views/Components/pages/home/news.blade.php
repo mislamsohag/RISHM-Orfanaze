@@ -1,15 +1,11 @@
 
 <section class="news shadow-right">
-    <div style="width: 12%; float: left; clear: right;">
+    <div>
         <h1 class="section-heading text-highlight heading-bg" style="padding-bottom: 0px;">
             <span class="line" style="font-size:17px;">Latest News: </span>
         </h1>
     </div>
-    <div style="width: 88%; float: right;">
-        <h1 class="section-heading text-highlight heading-bg">
-            <marquee style="margin-right: 60px; color:white;"></marquee>
-        </h1>
-    </div>
+    
     <div class="carousel-controls">
         <a class="prev" href="#recommended-item-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
         <a class="next" href="#recommended-item-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>        
