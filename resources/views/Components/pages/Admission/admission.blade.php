@@ -1,21 +1,26 @@
+@extends('Layout.app')
+
+@section('content')
+
 <body>
     <div class="container">
         <div class="row bg-primary">
-            <div class="col-md-2">
+            <div class="col-md-1">
                 <h3 class="logo col-md-5 col-sm-5 lineHeight">
-                    <a href="{{url('javascript:;')}}"><img style="height: 100px; width:100px;" src="{{asset('images/RSIHNM.png')}}" class="thumbnail"
-                            alt="Logo"></a>
+                    <a href="{{url('javascript:;')}}"><img style="height: 100px; width:100px;"
+                            src="{{asset('images/RSIHNM.png')}}" class="thumbnail" alt="Logo"></a>
                 </h3><!--//logo-->
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 ">
                 <h1 class="text-center">RAZAPUR SIDDIQIA HAFIZIA NURANI MADRASAH & ORPANAGE</h1>
-                <p>Vill: Razapur, P.O: Khilpara, P.S: Hajigonj, Dist: Chandpur, Phone: +880 1812-060163, www.abc.org</p>
-
-                <div class='pull-right'><a href="{{url('#')}}" class='btn btn-warning btn-sm'>New Application</a></div>
+                <p class="text-center">Vill: Razapur, P.O: Khilpara, P.S: Hajigonj, Dist: Chandpur, Phone: +880 1812-060163, www.abc.org</p>
+            </div>
+            <div class="col-md-1">
+                <div class='pull-right'><a href="{{url('#')}}" class='btn btn-warning btn-sm'>New
+                        Application</a></div>
                 <div class='pull-right'><a href="{{url('instruction.html')}}" target='_blank'
-                        class='btn btn-success btn-sm'>Show
-                        Instruction</a></div>
-                <br><br>
+                        class='btn btn-success btn-sm'>Show Instruction</a>
+                </div>
             </div>
         </div>
 
@@ -401,10 +406,11 @@
     <div class="bg-primary container" style='height:50px;'>
         <div class="col-md-12">
             <p style='text-align:center; align-items:center;'>
-                Copyright &copy; 2023. Developed by : <a href="{{url('#')}}" target='_blank' style='color:#fff'>SohagTech</a>
+                Copyright &copy; 2023. Developed by : <a href="{{url('#')}}" target='_blank'
+                    style='color:#fff'>SohagTech</a>
             </p>
         </div>
     </div>
 </body>
 
-</html>
+@endsection

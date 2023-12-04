@@ -8,9 +8,6 @@ class HomeController extends Controller
 {
     function Home(){
         return view("home");
-    }
-
-    function Admission(){
-        return view("admission");
-    }
+    }    
+    
 }

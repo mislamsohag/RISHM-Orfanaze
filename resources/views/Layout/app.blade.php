@@ -51,13 +51,11 @@
 
 <body class="home-page">
     <!-- Header -->
-    @include('Layout.header')
-    <!-- Header -->    
-
+    @include('Layout.header')        
+    @include('Layout.nav')
         <!-- All Components -->
         @yield('content')
-        <!-- All Components -->
-
+        <!-- All Components -->        
     <!-- Footer -->
     @include('Layout.footer')
     <!-- Footer -->
