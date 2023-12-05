@@ -17,15 +17,14 @@
 
 				<li class="nav-item dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-						data-close-others="false" href="#">Result <i class="fa fa-angle-down"></i></a>
+						data-close-others="false" href="{{('pdfResult')}}">Result <i class="fa fa-angle-down"></i></a>
 					<ul class="dropdown-menu">
-						<li><a href="{{url('result')}}" target="_blank">Terminal Result</a></li>
+						<li><a href="{{url('termResult')}}" target="_blank">Terminal Result</a></li>
 						<li class="nav-item"><a href="{{url('tutorialResult')}}"
 								target="_blank">Tutorial Result</a></li>
 						<li class="nav-item"><a href="{{url('boardResult')}}"
-								target="_blank">Board
-								Result</a></li>
-						<li class="nav-item"><a href="{{url('result')}}">PDF Result</a></li>
+								target="_blank">Board Result</a></li>
+						<li class="nav-item"><a href="{{url('pdfResult')}}">PDF Result</a></li>
 					</ul>
 				</li><!--//dropdown-->
 
@@ -40,7 +39,7 @@
 					</ul>
 				</li><!--//dropdown-->
 
-				<li class="nav-item"><a href="{{url('view/photoGallery.html')}}">Photo Gallery</a></li>
+				<li class="nav-item"><a href="{{url('gallery')}}">Photo Gallery</a></li>
 
 				<li class="nav-item dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
