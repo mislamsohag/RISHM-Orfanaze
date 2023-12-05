@@ -25,12 +25,6 @@ header{
 	position:relative;
 	/* min-height:100%; */
 }
-footer {
-  background: url(../images/bg1.jpg);
-	width:100%;
-	position:absolute;
-  padding: 20px;  
-}
 h1,
 h2,
 h3,
@@ -908,9 +902,10 @@ ul.custom-list-style li {
 }
 /* ======= Footer ======= */
 .footer {
-    height: auto;
-  background: #444444;
-  color: #fff;
+  background: url(../images/bg1.jpg);
+	width:100%;
+	position:absolute;
+  padding: 20px;  
 }
 .footer p {
   color: #dcdcdc;

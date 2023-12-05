@@ -19,11 +19,9 @@
 					<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
 						data-close-others="false" href="{{('pdfResult')}}">Result <i class="fa fa-angle-down"></i></a>
 					<ul class="dropdown-menu">
-						<li><a href="{{url('termResult')}}" target="_blank">Terminal Result</a></li>
-						<li class="nav-item"><a href="{{url('tutorialResult')}}"
-								target="_blank">Tutorial Result</a></li>
-						<li class="nav-item"><a href="{{url('boardResult')}}"
-								target="_blank">Board Result</a></li>
+						<li><a href="{{url('termResult')}}">Terminal Result</a></li>
+						<li class="nav-item"><a href="{{url('tutorialResult')}}">Tutorial Result</a></li>
+						<li class="nav-item"><a href="{{url('boardResult')}}">Board Result</a></li>
 						<li class="nav-item"><a href="{{url('pdfResult')}}">PDF Result</a></li>
 					</ul>
 				</li><!--//dropdown-->
@@ -34,8 +32,8 @@
 						data-close-others="false" href="#">Study Plan <i class="fa fa-angle-down"></i></a>
 					<ul class="dropdown-menu">
 						<li class="nav-item"><a href="{{url('syllabus')}}">Syllabus</a></li>
-						<li><a href="{{url('view/classroutine/0.html')}}">Class Routine</a></li>
-						<li><a href="{{url('view/examroutine/1.html')}}">Exam Routine </a></li>
+						<li><a href="{{url('classrRoutine')}}">Class Routine</a></li>
+						<li><a href="{{url('examroutine')}}">Exam Routine </a></li>
 					</ul>
 				</li><!--//dropdown-->
 
@@ -45,15 +43,15 @@
 					<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0"
 						data-close-others="false" href="{{url('admission')}}">Admission <i class="fa fa-angle-down"></i></a>
 					<ul class="dropdown-menu">
-						<li><a href="{{url('admission')}}" target='_blank'>Online Admission</a></li>
-						<li><a href="{{url('ems/admissionFormPrintSearch')}}" target='_blank'>Admission Form Print</a>
+						<li><a href="{{url('admission/onlineAdmission')}}">Online Admission</a></li>
+						<li><a href="{{url('admission/admissionForm')}}" target='_blank'>Admission Form Print</a>
 						</li>
-						<li><a href="{{url('ems/editApplicantsView')}}" target='_blank'>Admission Form Update</a></li>
-						<li><a href="{{url('ems/admissionResultCheck')}}" target='_blank'>Admission Result Check</a>
+						<li><a href="{{url('admission/updateApplication')}}" >Admission Form Update</a></li>
+						<li><a href="{{url('admission/admissionResult')}}">Admission Result Check</a>
 						</li>
 					</ul>
 				</li>
-				<li class="nav-item"><a href="{{url('view/contactUs.html')}}">Contact Us</a></li>
+				<li class="nav-item"><a href="{{url('contact')}}">Contact Us</a></li>
 			</ul>
 		</div>
 	</div>
