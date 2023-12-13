@@ -901,107 +901,38 @@ ul.custom-list-style li {
   margin-left: -1px;
 }
 /* ======= Footer ======= */
-.footer {
+footer {
   background: url(../images/bg1.jpg);
 	width:100%;
 	position:absolute;
-  padding: 20px;  
+  padding: 20px;
 }
-.footer p {
-  color: #dcdcdc;
+
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  background: #11990527;
 }
-.footer ul {
-  padding-left: 0;
-}
-.footer li {
-  list-style: none;
-}
-.footer h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.footer .footer-content {
-  padding: 30px 0;
-  font-size: 12px;
-  min-height: auto;
-}
-.footer .footer-content .footer-col .footer-col-inner {
-  padding: 0 15px;
-}
-.footer .footer-content .footer-col .fa {
-  margin-right: 10px;
-  display: inline-block;
-  color: #767676;
-}
-.footer .footer-content .footer-col .fa.fa-phone {
-  font-size: 16px;
-}
-.footer .footer-content .footer-col li {
-  margin-bottom: 10px;
-  font-size: 12px;
-}
-.footer .footer-content .footer-col a {
-  color: #dcdcdc;
-}
-.footer .footer-content .footer-col a:hover {
-  color: #84aac9;
-}
-.footer .footer-content .adr {
-  margin-bottom: 30px;
-}
-.footer .footer-content .adr .fa {
-  font-size: 16px;
-  margin-top: 2px;
-}
-.footer .footer-content .subscribe-form {
-  padding: 0;
-}
-.footer .footer-content .subscribe-form .form-group {
-  display: inline-block;
-  margin-bottom: 0;
-  vertical-align: middle;
-}
-.footer .footer-content .subscribe-form .form-control {
-  width: 320px;
-  background: #f5f5f5;
-  border: none;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-.footer .footer-content .subscribe-form .form-control:focus {
-  background: #fff;
-}
-.footer .bottom-bar {
-  background: #2b2b2b;
-  padding: 5px 0;
-}
-.footer .bottom-bar .copyright {
+.bottom-bar .copyright {
   font-size: 11px;
   color: #dcdcdc;
-  line-height: 3;
 }
-.footer .bottom-bar .copyright a:hover {
-  color: #84aac9;
-}
-.footer .bottom-bar .social {
-  margin: 0;
-}
-.footer .bottom-bar .social li {
+footer .bottom-bar .social li {
   float: right;
   margin-left: 10px;
+  align-items: center;
   text-align: center;
   font-size: 18px;
-  line-height: 2;
+  /* line-height: 2; */
+  list-style: none;
 }
-.footer .bottom-bar .social li a {
+.bottom-bar .social li a {
   color: #a9a9a9;
-  padding: 0 5px;
+  /* padding-top: 10px; */
 }
-.footer .bottom-bar .social li a:hover {
-  color: #6091ba;
-}
+footer .bottom-bar .social li a:hover {
+  color: #fd0505;
+} 
 /* ======= FlexSlider ======= */
 .flexslider {
   -webkit-border-radius: 0;

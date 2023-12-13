@@ -5,7 +5,7 @@
             <span class="line">Message From Principal </span>
         </h1>
         <figure class="thumb col-md-4">
-            <img src="{{asset('images/message/34749.jpg')}}" class="img-responsive principle" alt="Principal Image">
+            <img src="{{asset('images/message/principal.jpg')}}" class="img-responsive principle" alt="Principal Image">
         </figure>
         <div class="section-content">
             <p class="description">

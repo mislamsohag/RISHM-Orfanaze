@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdmissionController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DonateHomeController;
 use App\Http\Controllers\EmployeesController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
@@ -46,3 +47,5 @@ Route::group(["prefix" => "admission"], function () {
 });
 
 Route::get("/contact", [ContactController::class, "Contact"]);
+Route::get("/donateHome", [DonateHomeController::class, "donateHome"]);
+
