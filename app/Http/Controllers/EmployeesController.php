@@ -37,6 +37,6 @@ class EmployeesController extends Controller
                 'phone'=>'01812060163'
             ],
         ];
-        return view("Components.pages.employees.employees", ['employees'=>$employee]);
+        return view("pages.employees.employees", ['employees'=>$employee]);
     }
 }

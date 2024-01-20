@@ -7,15 +7,15 @@ use Illuminate\Http\Request;
 class AdmissionController extends Controller
 {
     function OnlineAdmission(){
-        return view("Components.Pages.Admission.onlineAdmission");
+        return view("pages.Admission.onlineAdmission");
     }
     function AdmissionForm(){
-        return view("Components.Pages.Admission.admissionFormPrint");
+        return view("pages.Admission.admissionFormPrint");
     }
     function UpdateApplication(){
-        return view("Components.Pages.Admission.updateApplication");
+        return view("pages.Admission.updateApplication");
     }
     function AdmissionResult(){
-        return view("Components.Pages.Admission.admissionResult");
+        return view("pages.Admission.admissionResult");
     }
 }

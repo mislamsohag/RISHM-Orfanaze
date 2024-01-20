@@ -1,4 +1,4 @@
-<!--  -->
+
 <footer>
     <div class="bottom-bar">
         <div class="container">

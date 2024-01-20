@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 class ResultController extends Controller
 {
     public function TerminalResult(){
-        return view("Components.Pages.Results.termResult");
+        return view("pages.Results.termResult");
     }
     public function TutorialResult(){
-        return view("Components.Pages.Results.tutorialResult");
+        return view("pages.Results.tutorialResult");
     }
     public function BoardResult(){
-        return view("Components.Pages.Results.boardResult");
+        return view("pages.Results.boardResult");
     }
     public function PDFResult(){
         $results=[
@@ -28,6 +28,6 @@ class ResultController extends Controller
             [ "id"=> "09", "class"=> "Class Name", "resultTitle"=> "Result Title", "date"=> "publsih date", "download"=> "Downlode File"],
             [ "id"=> "10", "class"=> "Class Name", "resultTitle"=> "Result Title", "date"=> "publsih date", "download"=> "Downlode File"]
         ];
-        return view("Components.Pages.Results.result", ['results'=>$results]);
+        return view("pages.Results.result", ['results'=>$results]);
     }
 }

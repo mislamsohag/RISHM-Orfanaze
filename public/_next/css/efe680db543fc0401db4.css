@@ -206,7 +206,7 @@
 .navbar_navbarBrand__1B8WF {
     width: 200px;
     height: 50px;
-    background-image: url(../media/dkLogo.7bd516182c5479fca3d1dc9589226d4d.webp);
+    background-image: url(../images/rshnm-donate-logo.png);
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 100%
@@ -910,7 +910,7 @@
     font-weight: 500;
     text-decoration: none;
     color: #423b7d;
-    padding: 15px 10px
+    padding: 10px 10px
 }
 
 .footer-dk-links_linksContainer__28S7c a:active,
@@ -1170,13 +1170,13 @@ a.bottom-footer_contactLink__176D_:hover {
     justify-content: space-between;
     -moz-box-align: center;
     align-items: center;
-    margin-top: 32px
+    margin: 1rem;
 }
 
 .bottom-footer_paymentCards__3-Nha img {
     width: 40px;
-    padding-bottom: 8px;
-    word-wrap: break-word
+    /* padding-bottom: 8px;
+    word-wrap: break-word */
 }
 
 .bottom-footer_sectionTitle__1QLFE {

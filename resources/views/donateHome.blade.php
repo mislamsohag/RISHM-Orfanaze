@@ -1,4 +1,4 @@
-@extends('Layout.donate')
+@extends('Layouts.donate')
 
 @section('content')
 
@@ -8,7 +8,7 @@
         <div class="home-showcase_banner__1P2Sx">
             <div class="home-showcase_overlayHeading___NuIh"></div>
         </div><img class="home-showcase_bannerImg__1pnLk gm-loaded gm-observing gm-observing-cb" data-gumlet="#"
-            loading="lazy" src="">
+            loading="lazy" src="{{asset('_next/images/rshnm-donate-logo.png')}}">
     </div>
 </section> 
 <!-- Banner Section End -->
@@ -987,7 +987,6 @@
 <div class="home-testimonials_tabsWrapper__2PKcc">
     <h3 class="home-testimonials_tab__1Qmkj home-testimonials_active__CqgFO">Celebrities</h3>
     <h3 class="home-testimonials_tab__1Qmkj ">Donors</h3>
-    <h3 class="home-testimonials_tab__1Qmkj ">NGOs</h3>
 </div>
 
 <div class="container home-testimonials_tabContent__10f9t">
@@ -1042,8 +1041,6 @@
     </div>
 </div>
 <!-- Doner Section End-->
-
-
 
 
 @endsection

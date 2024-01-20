@@ -19,6 +19,6 @@ class SyllabusController extends Controller
             [ "id"=> "09", "class"=> "Class Name", "syllabusTitle"=> "Syllabus Title", "date"=> "publsih date", "download"=> "Downlode File"],
             [ "id"=> "10", "class"=> "Class Name", "syllabusTitle"=> "Syllabus Title", "date"=> "publsih date", "download"=> "Downlode File"]
         ];
-        return view("Components.Pages.Syllabus.syllabus", ['syllabuses'=>$syllabus]);
+        return view("pages.Syllabus.syllabus", ['syllabuses'=>$syllabus]);
     }
 }
