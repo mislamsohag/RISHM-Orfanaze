@@ -13,7 +13,7 @@ class RoutineController extends Controller
             ['id'=>'03','class'=>'Class 03','title'=>'Class-03 Schedule and Routine','date'=>'Published Date','download'=>'Download File'],
             ['id'=>'04','class'=>'Class 04','title'=>'Class-04 Schedule and Routine','date'=>'Published Date','download'=>'Download File']           
         ];
-        return view("pages.Routine.classRoutine", ['routines' => $routine]);
+        return view("pages.routine.classRoutine", ['routines' => $routine]);
     }
     public function ExamRoutine(){
         $routine=[
@@ -22,6 +22,6 @@ class RoutineController extends Controller
             ['id'=>'03','class'=>'Class 03','title'=>'Class-03 Exame Routine','date'=>'Published Date','download'=>'Download File'],
             ['id'=>'04','class'=>'Class 04','title'=>'Class-04 Exame Routine','date'=>'Published Date','download'=>'Download File']           
         ];
-        return view("pages.Routine.examroutine", ['routines' => $routine]);
+        return view("pages.routine.examRoutine", ['routines' => $routine]);
     }
 }

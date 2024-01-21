@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class StudentsController extends Controller
 {
     public function Students(){
-        return view("pages.Students.studentInfo");
+        return view("pages.studentInfo");
     }
 }

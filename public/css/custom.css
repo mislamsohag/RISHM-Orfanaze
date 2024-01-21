@@ -247,7 +247,8 @@ a.expand {
   font-weight: 700;
   font-size: 30px;
   border-radius: 30px;
-}/* ============================================================
+}
+/* ============================================================
   EFFECT 5 - ICON BORDER ANIMATE
 ============================================================ */
 #effect-5 .overlay {
@@ -293,10 +294,10 @@ a.expand {
 }
 .image-event .title { 
    position: absolute; 
-   top: 110px;
+   top: 170px;
    height: 35px; 
    left: 20px;
-   width: 80%; 
+   width: 90%; 
    color: white; 
    font: bold 11px Helvetica, Sans-Serif; 
    letter-spacing: -1px;  

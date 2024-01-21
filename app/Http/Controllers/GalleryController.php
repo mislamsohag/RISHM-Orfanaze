@@ -7,18 +7,18 @@ use Illuminate\Http\Request;
 class GalleryController extends Controller
 {
     public function Gallery(){
-        return view("pages.Gallery.gallery");
+        return view("pages.galleryees.gallery");
     }
     public function Ceremony(){
-        return view("pages.Gallery.PhotosLink.ceremony");
+        return view("pages.galleryees.ceremony");
     }
     public function Programme(){
-        return view("pages.Gallery.PhotosLink.programme");
+        return view("pages.galleryees.programme");
     }
     public function Visit(){
-        return view("pages.Gallery.PhotosLink.visit");
+        return view("pages.galleryees.visit");
     }
     public function Sports(){
-        return view("pages.Gallery.PhotosLink.sports");
+        return view("pages.galleryees.sports");
     }
 }
