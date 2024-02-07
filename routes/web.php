@@ -1,18 +1,29 @@
 <?php
 
-use App\Http\Controllers\AdmissionController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\DonateHomeController;
-use App\Http\Controllers\EmployeesController;
-use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\UsersController;
+use App\Http\Middleware\TokenVerificationMiddlewaer;
+use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\ResultController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\RoutineController;
 use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\SyllabusController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdmissionController;
+use App\Http\Controllers\EmployeesController;
+use App\Http\Controllers\DonateHomeController;
 
+//Users
+Route::post('/userRegistration', [UsersController::class, 'UserRegistration']);
+Route::post('/userLogin', [UsersController::class, 'UserLogin']);
+Route::post('/userVerify', [UsersController::class, 'SendOTPCODE']);
+Route::post('/verifyOTP', [UsersController::class, 'VerifyOTP']);
+Route::delete('/logout', [UsersController::class, 'UserLogout']);
+
+Route::post('/resetPassword', [UsersController::class, 'ResetPassword'])->middleware([TokenVerificationMiddlewaer::class]);
 
 
 Route::get('/', [HomeController::class, 'Home']);
