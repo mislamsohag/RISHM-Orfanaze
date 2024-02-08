@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClasseController;
 use App\Http\Controllers\UsersController;
 use App\Http\Middleware\TokenVerificationMiddlewaer;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,11 @@ Route::delete('/logout', [UsersController::class, 'UserLogout']);
 
 Route::post('/resetPassword', [UsersController::class, 'ResetPassword'])->middleware([TokenVerificationMiddlewaer::class]);
 
+//Classes
+// Route::get('/classList', [ClasseController::class, 'ClassPage']);
+Route::post('/classeCreate', [ClasseController::class, 'ClasseCreate']);
+Route::post('/classUpdate', [ClasseController::class, 'Update']);
+Route::get('/classDestroy/{id}', [ClasseController::class, 'Destroy']);
 
 Route::get('/', [HomeController::class, 'Home']);
 Route::get('/home', [HomeController::class, 'Home']);

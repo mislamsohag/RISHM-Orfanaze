@@ -11,9 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('days', function (Blueprint $table) {
+        Schema::create('groups', function (Blueprint $table) {
             $table->id();
-            $table->string('dayName');
+            $table->string('groupName');
+            $table->string('groupFee');
+            $table->unsignedBigInteger('classe_id');
+            //linkup
+            $table->foreign('classe_id')->references('id')->on('classes')->cascadeOnUpdate()->restrictOnDelete();
+
             $table->timestamps();
         });
     }
@@ -23,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('days');
+        Schema::dropIfExists('groups');
     }
 };
