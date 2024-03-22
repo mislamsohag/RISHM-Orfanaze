@@ -10,3 +10,10 @@ class NoticeController extends Controller
         return view("pages.notice");
     }
 }
+
+
+
+
+
+
+

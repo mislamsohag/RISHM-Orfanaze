@@ -11,29 +11,29 @@ use Illuminate\Support\Facades\Mail;
 class UsersController extends Controller
 {
 
- /*    function RegistrationPage(){
-            return view('pages.auth.registration-page');
+    function RegistrationPage(){
+            return view('pages.auth.registrationPage');
         }
 
     function LoginPage(){
-        return view('pages.auth.login-page');
+        return view('pages.auth.loginPage');
     }
 
-    function SendOTPPage(){
-        return view('pages.auth.send-otp-page');
-    }
 
     function VerifyOTPPage(){
-        return view('pages.auth.verify-otp-page');
+        return view('pages.auth.verifyOtpPage');
     }
     
     function PasswordResetPage(){
-        return view('pages.auth.reset-pass-page');
+        return view('pages.auth.passwordResetPage');
     }
     
     function ProfilePage(){
         return view('pages.dashboard.profile-page');
-    } */
+    } 
+    function dashboard(){
+        return view('pages.dashboardPage');
+    } 
 
     function UserRegistration(Request $request)
     {
@@ -46,10 +46,7 @@ class UsersController extends Controller
                 'password' => $request->input('password')
             ]);
 
-            return response()->json([
-                'status' => 'success',
-                'message' => 'Registration is successfully'
-            ],200);
+            return redirect('/loginPage')->with('success');
         } catch (Exception $exception) {
             return response()->json([
                 'status' => 'failed',
@@ -62,32 +59,28 @@ class UsersController extends Controller
 
     function UserLogin(Request $request)
     {
-        // dd($email, $password);
+        // dd($request->input());
 
         $count = User::where('email', '=', $request->email)
             ->where('password', '=', $request->password)
             ->select('id')->first();
         // dd($count);
         if ($count == null) {
-            return response()->json([
-                'status' => 'failed',
-                'message' => "Your email or password don't match"
-            ],200);
+            return redirect()->back()->with("Your email or password don't match");                
         } 
         else {
             // Jwt token issue
             $token = JWTToken::CreateToken($request->email, $count->id);
-            return response()->json([
-                'status' => 'success',
-                'message' => 'Login success'
-            ],200)->cookie('token', $token, 60*24*30);
+            return redirect('/')->cookie('token', $token, 60*24*30);
         }
     }
 
 
     //User Verification and send OTP
-    function SendOTPCODE(Request $request)
+    function SendOTPCode(Request $request)
     {
+        dd($request->input('email'));
+
         $email = $request->input('email'); //catch email
         $otp = rand(100000, 999900); // make 4 digit random OTP
 

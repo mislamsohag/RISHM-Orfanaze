@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\ClasseController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\GroupController;
+use App\Http\Controllers\SubjectsController;
+use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\UsersController;
 use App\Http\Middleware\TokenVerificationMiddlewaer;
 use Illuminate\Support\Facades\Route;
@@ -14,13 +18,16 @@ use App\Http\Controllers\RoutineController;
 use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\SyllabusController;
 use App\Http\Controllers\AdmissionController;
-use App\Http\Controllers\EmployeesController;
 use App\Http\Controllers\DonateHomeController;
 
+Route::get('/dashboard', [UsersController::class, 'dashboard']);
+Route::get('/passwordResetPage', [UsersController::class, 'PasswordResetPage']);
 //Users
+Route::get('/registrationPage', [UsersController::class, 'RegistrationPage']);
 Route::post('/userRegistration', [UsersController::class, 'UserRegistration']);
+Route::get('/loginPage', [UsersController::class, 'LoginPage']);
 Route::post('/userLogin', [UsersController::class, 'UserLogin']);
-Route::post('/userVerify', [UsersController::class, 'SendOTPCODE']);
+Route::post('/sendOTPCode', [UsersController::class, 'SendOTPCode']);
 Route::post('/verifyOTP', [UsersController::class, 'VerifyOTP']);
 Route::delete('/logout', [UsersController::class, 'UserLogout']);
 
@@ -32,9 +39,29 @@ Route::post('/classeCreate', [ClasseController::class, 'ClasseCreate']);
 Route::post('/classUpdate', [ClasseController::class, 'Update']);
 Route::get('/classDestroy/{id}', [ClasseController::class, 'Destroy']);
 
+// Group Routes
+Route::post('/groupCreate', [GroupController::class, 'GroupCreate']);
+Route::post('/groupUpdate', [GroupController::class, 'GroupUpdate']);
+
+// Subjects Routes
+Route::post('/subjectCreate', [SubjectsController::class, 'SubjectCreate']);
+// Route::post('/subjectUpdate', [SubjectsController::class, 'SubjectUpdate']);
+
+// Employees Routes
+Route::get('/employee', [EmployeeController::class, 'index']);
+Route::get('/employeeStorePage', [EmployeeController::class, 'create']);
+Route::post('/employeeCreate', [EmployeeController::class, 'store']);
+Route::post('/employeeUpdate', [EmployeeController::class, 'update']);
+Route::delete('/employeeDelete/{id}', [EmployeeController::class, 'EmployeeDelete']);
+
+//teachers
+Route::post('/teacherCreate', [TeacherController::class, 'TeacherCreate']);
+Route::post('/teacherUpdate', [TeacherController::class, 'TeacherUpdate']);
+Route::delete('/teacherDelete/{id}', [TeacherController::class, 'TeacherDelete']);
+
+
 Route::get('/', [HomeController::class, 'Home']);
 Route::get('/home', [HomeController::class, 'Home']);
-Route::get('/employee', [EmployeesController::class, 'Employee']);
 Route::get('/students', [StudentsController::class, 'Students']);
 Route::get('/notice', [NoticeController::class, 'Notices']);
 
